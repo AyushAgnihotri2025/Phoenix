@@ -99,8 +99,6 @@ router.get('/', authMiddleware, getGadgetController);
  *           schema:
  *             type: object
  *             properties:
- *               name:
- *                 type: string
  *               status:
  *                 type: string
  *                 enum: [available, deployed, destroyed]
@@ -144,8 +142,6 @@ router.post('/', authMiddleware, postGadgetController);
  *               - id
  *             properties:
  *               id:
- *                 type: string
- *               name:
  *                 type: string
  *               status:
  *                 type: string
