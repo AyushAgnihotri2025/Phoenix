@@ -36,7 +36,7 @@ class Server {
             res.json({
                 message: 'Welcome to the Impossible Mission Force API',
                 version: '1.0.0',
-                documentation: 'https://documenter.getpostman.com/view/12363299/TzJx8w5x',
+                documentation: req.protocol + '://' + req.get('host') + "/api-docs",
                 created_by: 'Ayush Agnihotri',
             })
         );
